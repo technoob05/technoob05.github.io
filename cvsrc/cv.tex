@@ -1,0 +1,142 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage[pdfnewwindow=true]{hyperref}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{needspace}
+\hypersetup{
+    pdfnewwindow=true,
+    colorlinks=true,
+    urlcolor=primarycolor,
+    linkcolor=primarycolor
+}
+
+\geometry{left=1.2cm, top=1.1cm, right=1.2cm, bottom=1.1cm}
+\definecolor{primarycolor}{RGB}{70,130,180}
+\linespread{0.94}
+\pagestyle{empty}
+\titleformat{\section}{\Large\bfseries\color{primarycolor}}{\thesection}{0em}{}[\titlerule]
+\titlespacing*{\section}{2pt}{4pt}{2pt}
+\setlist[itemize]{itemsep=2pt,parsep=1pt, topsep=2pt, partopsep=1pt, leftmargin=0pt, label={}}
+\setlength{\parskip}{2pt}
+\newcommand{\entry}[4]{
+    {\noindent\textbf{#1} \hfill #2\par}
+    {\textit{#3}\par}
+    \begin{itemize}[label={},labelwidth=0pt,labelsep=0pt]
+        #4
+    \end{itemize}
+}
+\begin{document}
+\noindent
+\begin{minipage}[c]{0.20\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,clip,keepaspectratio]{../../Hồ_Sơ/00_GiayTo_Goc/01_CaNhan/AnhCV_ChanDung.png}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.78\textwidth}
+    \noindent
+    \begin{minipage}[c]{0.60\textwidth}
+        {\huge\bfseries Dao Sy Duy Minh}
+    \end{minipage}%
+    \begin{minipage}[c]{0.38\textwidth}
+        \raggedleft{\large\bfseries Undergraduate\\Researcher}
+    \end{minipage}\\[2pt]
+    {\scriptsize
+    \faEnvelope\ \href{mailto:23122041@student.hcmus.edu.vn}{23122041@student.hcmus.edu.vn} \,|\,
+    
+    \faMapMarker\ Ho Chi Minh City, Vietnam \,|\,
+    \faGithub\ \href{https://github.com/technoob05}{github.com/technoob05} \\
+    \faLinkedin\ \href{https://www.linkedin.com/in/loser1/}{linkedin.com/in/loser1} \,|\,
+    \faGraduationCap\ \href{https://scholar.google.com/citations?user=CfnK0icAAAAJ}{Google Scholar} \,|\,
+    \faGlobe\ \href{https://www.facebook.com/learningaiwithlosers/}{facebook.com/learningaiwithlosers}
+    }
+    \par\vspace{0.3em}
+\textbf{SUMMARY}\\[2pt]
+Language and foundation models are starting to plan and act for robots, and I want them to be safe when they do. As a final-year undergraduate at VNUHCM University of Science, I have studied both halves of that problem. On the model side, my papers show that a language-model agent's decisions shift with the stakes, the language and the culture of the situation it is in. On the physical side, I build weather-robust perception for drones that must locate themselves without satellite navigation, and work as an R\&D engineer on edge AI for drones. I plan to pursue a PhD on safe foundation models for robotics. \textbf{Five papers accepted at NeurIPS 2026 (two as co-first author) and a co-first-author paper in \textit{Interface Focus}, a Royal Society journal (Q1, Scimago 2025).}
+\end{minipage}
+\vspace{0.5em}
+
+\section*{RESEARCH INTERESTS}
+Safe Foundation Models for Robotics \quad | \quad LLM Agent Behaviour \quad | \quad Robust UAV Perception
+
+\section*{WORK \& RESEARCH EXPERIENCE}
+\entry{Research Team Member, Team TheFangs}{2025 to Present}{HCMUS $\cdot$ University of Warwick $\cdot$ Teesside University}{
+    \item Collaborate with \textbf{Prof.\ The Anh Han} (Teesside University) on training-free cultural alignment and the behaviour of language-model agents across social settings. This work led to DISCA, where I am a co-first author.
+    \item Work with \textbf{Prof.\ Long Tran-Thanh} (University of Warwick) on robust visual retrieval for drones, including SkyPart, where I am a co-first author. Contribute to accepted work on streaming decision trees and continual few-shot learning.
+}
+\entry{Research and Development Engineer}{Feb 2026 to Present}{Realtime Robotics $\cdot$ Ho Chi Minh City}{
+    \item Research \textbf{edge AI for drones}: weather-robust visual perception and efficient models that can operate on airborne hardware.
+    \item Explore \textbf{knowledge distillation for real-time on-device inference}, where memory and processing time are limited.
+}
+\entry{Research Assistant}{2026 to Present}{Software Engineering Lab, VNUHCM University of Science}{
+    \item Under Assoc.\ Prof.\ Nguyen Van Vu, study \textbf{small language models} for bug detection, automated repair, and code testing.
+    \item Investigate \textbf{vision-language models} for aerial visual question answering under tight memory and compute budgets.
+}
+\entry{Founder \& Content Creator}{Oct 2024 to Present}{Learning AI with Losers $\cdot$ Academic AI Platform}{
+    \item Build a free Vietnamese-language resource that makes machine learning research easier to enter for students without access to a lab or English-language mentorship.
+    \item Publish \textbf{22 explainer videos} and \textbf{6 podcast episodes} on research methods and AI systems, reaching about \textbf{4,000 followers} across Facebook, Threads, TikTok and YouTube.
+}
+
+\section*{EDUCATION}
+\entry{Bachelor of Artificial Intelligence}{Sep 2023 to Expected Oct 2027}{VNUHCM University of Science}{
+    \item GPA \textbf{9.47/10} (\textbf{3.94/4.0}) in academic year 2025-2026; cumulative \textbf{8.86/10} over 136 credits (official transcripts, Sep and Oct 2026). Coursework: Machine Learning, Deep Learning, NLP, Computer Vision, AI Ethics.
+}
+
+\section*{PUBLICATIONS}
+{\small
+\begin{itemize}[label={},labelwidth=0pt,labelsep=0pt, itemsep=5pt]
+    \item \textbf{Training-Free Cultural Alignment of Large Language Models via Persona Disagreement (DISCA)} \quad \faStar\ \textbf{Co-first author; first listed}\\[1pt]
+    \textbf{NeurIPS 2026 main track, poster} \quad \href{https://arxiv.org/pdf/2605.10843v2}{\faFilePdf\ Paper}\\[1pt]
+    \textit{D. S. D. Minh, T.-K. Huynh, C.-N. Tran, P. Q. Nguyen Lam, P.-H. Pham, T. Nguyen, The Anh Han, Long Tran-Thanh}\\[2pt]
+    \textit{A language model can answer a moral question as if one culture's preferences were universal. \textbf{DISCA} uses public World Values Survey data to create a panel of culturally grounded personas for each country. Their disagreement tells the method how strongly to adjust the frozen model's decision logits; when the estimate is unreliable, the correction shrinks toward zero. It needs neither country-specific preference labels nor weight updates. Across \textbf{20 countries}, DISCA cuts cultural misalignment by \textbf{10 to 24\%} on six backbones with at least 3.8B parameters. A calibrated 14B model also outperforms an unadjusted 70B model on absolute alignment, showing that local calibration can matter as much as scale.}
+    \Needspace{18\baselineskip}
+    \item \textbf{Weather-Robust Cross-View Geo-Localization via Prototype-Based Semantic Part Discovery (SkyPart)} \quad \faStar\ \textbf{Co-first author; second listed}\\[1pt]
+    \textbf{NeurIPS 2026 main track, poster} \quad \href{https://arxiv.org/pdf/2605.11654v2}{\faFilePdf\ Paper}\\[1pt]
+    \textit{C.-N. Tran, D. S. D. Minh, T.-K. Huynh, P.-H. Pham, P. Q. Nguyen Lam, Long Tran-Thanh}\\[2pt]
+    \textit{When satellite navigation fails, a drone can locate itself by matching its camera view to a satellite map. Weather, viewpoint and altitude changes make appearance unreliable: the same place may look different from above, from street level, or through rain. \textbf{SkyPart} groups vision-transformer patches into learned semantic parts instead of compressing a whole image into one descriptor. A shared prototype vocabulary lets drone and satellite views retain roads and other stable layout cues; graph attention compares how those parts relate in space. Altitude informs training but is not needed at inference. At \textbf{26.95M parameters}, SkyPart leads single-pass comparisons on SUES-200, University-1652 and DenseUAV without reranking or test-time augmentation. Its margin over the strongest baseline grows under ten simulated weather conditions, supporting visual positioning under the shifts a drone faces outside a benchmark.}
+    \item \textbf{Payoff Scaling Shapes Cooperation in LLM Agents across Languages} \quad \faStar\ \textbf{Co-first author; second listed}\\[1pt]
+    \textbf{Interface Focus (Royal Society journal), accepted November 2026} \quad \href{https://arxiv.org/abs/2601.19082}{\faFilePdf\ Paper}\\[2pt]
+    \textit{When two language-model agents play a repeated Prisoner's Dilemma, do they cooperate, and what changes their mind? We trained classifiers that recognise classic strategies such as Tit-for-Tat and compared the agents with what evolutionary game theory predicts. As stakes grow, the theory predicts more defection, yet the agents become \textbf{more cooperative}. The language of the prompt shifts their strategy about as much as the choice of model, across \textbf{five languages} and \textbf{12,000} agent pairs, and the pattern also holds for small open-weight models. Stakes and wording are therefore safety-relevant levers for any agent that acts for people.}
+    \item \textit{Also coauthor on three accepted NeurIPS 2026 posters: MIST and continual few-shot compositional generalization, both main track; Mouse vs.\ AI Benchmark, Evaluations and Datasets track. Five accepted NeurIPS posters in total; NeurIPS is ranked first in Artificial Intelligence by Google Scholar Metrics. Also co-lead author of RoadFury, ICST 2026 Tool Competition (CORE A).}
+    \item \textbf{MEMRES: A Memory-Augmented Resolver with Confidence Cascade for Agentic Python Dependency Resolution}\\[1pt]
+    \textbf{FSE 2026 AIWare Companion}, co-located with \textbf{CORE A\textsuperscript{*}} FSE, ACM \quad \textit{accepted} \quad \faStar\ \textbf{Co-first author} \quad \href{https://arxiv.org/pdf/2604.16941}{\faFilePdf\ Paper}\\[2pt]
+    \textit{AI-generated Python code often fails because an import points to the wrong package or version. \textbf{MEMRES} reuses fixes that worked before and checks simple rules first, asking a small model only as the last step of a six-level confidence cascade. It resolves \textbf{86.6\%} of snippets versus \textbf{54.7\%} for the earlier method while cutting model calls by over \textbf{60\%}.}
+    \item \textbf{Early-Stage Prediction of Review Effort in AI-Generated Pull Requests}\\[1pt]
+    \textbf{MSR 2026} \quad \textbf{CORE A}, ACM \quad \textit{accepted} \quad \faStar\ \textbf{Co-first author; first listed; corresponding author} \quad \href{https://arxiv.org/pdf/2601.00753v2}{\faFilePdf\ Paper}\\[2pt]
+    \textit{AI coding agents write code quickly, but maintainers inherit the review burden. Across \textbf{33,707 agent-authored pull requests}, our model uses only what is known when a pull request opens and reaches \textbf{AUC 0.958}, finding \textbf{69\%} of high-effort cases within a 20\% review budget.}
+\end{itemize}
+}
+
+\section*{AWARDS}
+{\small
+\begin{itemize}[label={},labelwidth=0pt,labelsep=0pt, itemsep=3pt]
+    \item \textbf{\faTrophy\ 1st Place, both tracks, NeurIPS 2025 Mouse vs.\ AI Robust Foraging Competition.} A lightweight vision model reached \textbf{95.4\%} visual robustness and ranked first on predicting mouse visual-cortex activity.
+    \item \textbf{\faTrophy\ 1st Place, SemEval-2026 Task 11 (Syllogistic Reasoning), ACL workshop.} Perfect combined score of \textbf{100.0}.
+    \item \textbf{\faTrophy\ 1st Place, FSE-AIWare 2026 competition.} The challenge behind MEMRES.
+    \item \textbf{\faTrophy\ Best Presentation, SoICT Summer School on Edge AI, HUST, 2026.} On-device visual assistant for people with visual impairments.
+    \item \textbf{\faAward\ Strategic Technologies Scholarship, Australia-Vietnam Strategic Technologies Centre, 2026.} ``For exceptional achievement and potential contributions toward shaping the future of emerging technologies''; signed by the Australian Ambassador for Cyber Affairs and Critical Technology.
+    \item \textbf{\faAward\ Chan Hung Vietnam Industrial Technology Scholarship (9th edition), 2026.} Awarded by the Vietnam Taiwanese Entrepreneurs Scholarship Foundation.
+    \item \textbf{\faAward\ Khoi Nguon Sang Tao (Spark of Creativity) Award 2026, Tuoi Tre newspaper.} For outstanding achievement in scientific research and technical creativity.
+    \item \textbf{\faAward\ Aspire Leaders Program 2026 (Cohort 4).} Selected for the global leadership programme founded at Harvard University in 2017.
+    \item \textbf{\faMedal\ National Third Prize, Vietnam Student AI Olympiad 2025.} 124 teams from 49 universities.
+    \item \textbf{\faMedal\ Other international results:} 1st place, Nakba-NLP Shared Task (LREC 2026); 2nd Prize, MMLoSo (IJCNLP-AACL 2025); Top 3, EVENTA Challenge (ACM Multimedia 2025); 2nd Prize, DIG4BIO (TU Berlin 2026); Kaggle silver and bronze medals.
+\end{itemize}
+}
+
+\section*{TECHNICAL SKILLS}
+{\small Python, C/C++, SQL, LaTeX $\cdot$ PyTorch, scikit-learn, LightGBM $\cdot$ Hugging Face Transformers \& PEFT, LoRA/QLoRA, vLLM, RAG $\cdot$ LangChain, Docker, Git, Weights \& Biases, H100/A100 training.}
+
+\section*{REFEREES}
+{\small
+\begin{itemize}[label={},labelwidth=0pt,labelsep=0pt]
+    \item \textbf{Prof.\ Long Tran-Thanh}, University of Warwick. Supervisor on four of the five accepted NeurIPS 2026 papers. \href{https://scholar.google.com.vn/citations?user=YBQai3gAAAAJ}{\faGlobe\ Scholar}
+    \item \textbf{Prof.\ The Anh Han}, Teesside University. Supervisor on the cultural alignment work. \href{https://scholar.google.com/citations?user=R6zfbxgAAAAJ}{\faGlobe\ Scholar}
+    \item \textbf{Assoc.\ Prof.\ Nguyen Van Vu}, VNUHCM University of Science. \href{https://scholar.google.com/citations?user=NNZVGIcAAAAJ}{\faGlobe\ Scholar}
+\end{itemize}
+}
+
+\end{document}
